@@ -13,7 +13,7 @@ A simple ROS 2 project demonstrating **Action communication** with feedback and 
 
 ## 🧪 How to Run
 
-### 1. Build the workspace
+## 1. Build the workspace
 
 ```bash
 cd ~/move_robot_ws
@@ -21,18 +21,18 @@ colcon build
 source install/setup.bash
 ```
 
-### 2. Run the nodes
+## 2. Run the nodes
 
-# Terminal 1
+### Terminal 1
 ros2 run actions_cpp move_robot_server
 
-# Terminal 2
+### Terminal 2
 ros2 run actions_cpp move_robot_client
 
-# Terminal 3 (to cancel)
+### Terminal 3 (to cancel)
 ros2 topic pub /cancel_move example_interfaces/msg/Empty "{}"
 
-### 📁 Package Structure
+## 📁 Package Structure
 ```
 move_robot_ws/
 ├── src/
